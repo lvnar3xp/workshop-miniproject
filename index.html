@@ -1,0 +1,286 @@
+<html>
+    <head>
+        <!-- Code copied from fonts.google.com, allowing use of a font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+        <!--Code from W3 School that links the styles for the social buttons in the footer-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Links my style sheet, Style.css to this page allowing it to be affected by its code-->
+        <link rel="stylesheet" href="style.css">
+        <!--Code copied from the favicon generator that controls the look of the sites favicon. Links to the favicon folder-->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+        <!--Gives the page a title-->
+        <title>Ben's Bastion</title>
+    </head>
+    <body>
+        <header></header>
+        <nav> 
+            <!--This code creates an unorder list in the nav bar, styled to look like boxs. On the list is links to all the other pages on the site-->
+            <!--Each link also has a class called rcorners that it styled so each link had rounded corners.-->
+            <ul>
+                <li><a class="rcorners1" href = index.html>Home</a></li>
+                <li><a class="rcorners1" href = computerScience.html>Computer Science</a></li>
+                <li><a class="rcorners1" href = geography.html>Geography</a></li>
+                <li><a class="rcorners1" href = travel.html>Travel</a></li>
+                <li><a class="rcorners1" href = other.html>Other</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!--This div uses the class flex container and box to center and style whats stored inside of it-->
+            <div class="flex-container">
+                <div class="box">
+                    <p>Welcome To Ben's Bastion!</p>
+                </div>
+            </div>
+            <!--This code uses the <h1> tag to make a heading as well as an input box alongside it. The type of input is set to a number and apears as a button. Once submitted (using onClick to tell) it initializes the test() function which is explained in the java script section-->
+            <h1>How Many Times is the Word 'Ben' Used Below This Line: <input type="number" id="myInput" /> <input type="button" value="submit" onclick="secretArt1()";/> </h1>
+            <!--The <hr> tag makes a horizontal line which is also styled on the css page-->
+            <hr>
+            <!--This code makes another flex box which in this case is coloured to blend with the background and not be seen-->
+            <div class="flex-container3">
+                <div class="box3">
+                    <!--Inside one of the boxs is an image which is linked below and found in the images folder-->
+                    <img src="images/faviconPic-removebg-preview.png">
+                </div>
+                <div class="box3">
+                    <h1>About This Site</h1>
+                </div>
+                <div class="box3">
+                    <img src="images/faviconPic-removebg-preview.png">
+                </div>
+            </div>
+
+            <hr>
+            <div class="flex-container3">
+                <div class="box3">
+                    <p>Welcome to Ben's Bastion! This site is meant to show all of my favourite activities, hobbies and achiements all in one convenient place. But, there is more to this site than meets the eye . . . <b>A Scavenger Hunt!</b>
+                        More about that is explained below.
+                    </p>
+                    <p>
+                        The computer science page explores my personal favourite achiements in the world of programming and gives some history on them as well. The geography page will have plenty weird facts and memes that Ive found interesting. The travel page has the places and stories of where Ive traveled to in the past as well as where Id want to go to in the future.
+                        Finally the Other page has smaller topics that I wouldnt be able to have a whole page for. The Other page doesnt have a scavenger hunt on it.
+                    </p>
+                </div>
+            </div>
+            <!--This code makes a button that can toggle elements around it. In this case it can toggle ChatGPT's rap for the site. The button code was gotten from W3 school-->
+            <button type="button" class="collapsible">Chat GPT's Rap Intro For This Site (toggle)</button>
+            <!--The div 'content' holds what colapses when the button is pressed-->
+            <div class="content">
+                <div class="flex-container3">
+                    <div class="box3">
+                        <!--Each line has a <p> tag making the text inside apear on a different line each bar. It also in the invisable flexbox so it can be centered on the page-->
+                        <p>Yo, welcome to the spot, it’s Ben's Bastion, </p>
+                        <p>Where creativity flows, and dreams are fashion.</p>
+                        <p>From art to tech, we’re breaking the mold,</p>
+                        <p>In this digital realm, watch the stories unfold.</p>
+
+                        <p>Got tips and tricks, inspiration galore,</p>
+                        <p>Explore the depths, there’s always more in store.</p>
+                        <p>Join the community, let your voice be heard,</p>
+                        <p>At Ben's Bastion, we’re spreading the word!</p>
+                        
+                        <p>So dive on in, don’t hesitate or stall,</p>
+                        <p>This is your hub—yeah, it’s got it all!</p>
+                        <p>Ben's Bastion, where we rise and shine,</p>
+                        <p>Creating together, it’s our time to grind!</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="flex-container3">
+                <div class="box3">
+                    <h1>Scavenger Hunt Info</h1>
+                </div>
+            </div>
+
+            <hr>
+            <div class="flex-container3">
+                <div class="box3">
+                    <p>On this site are hidden objects that you will need to find. This could be by simply typing an answer or finding hidden buttons that are found all over this site.
+                        Each page has three hidden artifacts and the ones you find can be tracked using the scavenger charts on each page. If you are stuck on one or just want to instantly finding
+                        them all, at the bottom of each page there is a buttom that when pressed says all the locations of the artifacts. Below you can also find a handy Hint button to lead you in the right direction.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <!--The table below is used to track the players artifacts name and whether or not they have found it yet. Javascript is used to fill the chart with whether they found something or not-->
+            <div class="flex-container3">
+                <div class="box3">
+                    <!--The <table> tag makes a chart which stores content in boxs and lines and can be styled using CSS-->
+                    <table>
+                        <!--TR makes a row-->
+                        <tr>
+                            <!--TH makes a table heading so its slightly more bold and noticable-->
+                            <th>Artifact Number</th>
+                            <th>Artifact Name</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <!--TD is just the regular way to add content to a table-->
+                            <td>1</td>
+                            <td>A String Of Numbers</td>
+                            <td><p id="keySpot"></p></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>A Ring of Power</td>
+                            <td><p id="keySpot2"></p></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Invisability Cloak</td>
+                            <td><p id="keySpot3"></p></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="box3">
+                    <!--Also in the chart is this button which displays a random hint to the user when pressed-->
+                    <button class="button" onclick="randHint()">Random Hint</button>
+                </div>
+            </div>
+
+
+            <div class="flex-container3">
+                <div class="box3">
+                    <!--The code below allows an image to be clickable using an image map. You can make a rectangular area or circular area on an image that initializes something when clicked-->
+                    <!--The image map has an identifiable tag which can be used more in javascipt as well as the usual image dimensions code as well-->
+                    <img src="images/hobbitMeme.jpg" alt="Meme" usemap="#workmap" width="500" height="400">
+                    <!--This code defines the map used to make some parts of an ijmage clickable. It was gotten from W3 Schol-->
+                    <map name="workmap">                
+                        <area shape="circle" coords="50, 280, 30" alt="Computer" onclick="secretArt2()">
+                    </map>
+                </div>
+                <div class="box3">
+                    <img src="images/ottomanMeme.jpg" alt="Meme" width="500" height="400">
+                </div>
+            </div>
+
+            <div class="flex-container3">
+                <div class="box3">
+                    <!--The code below embed a YouTube video into a site. The code was copied strait from Youtube-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/w5ebcowAJD8?si=ZigqBPJeqH-bs6An" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="box3">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rP5aJEq0k7s?si=49UJAGL-a8RyBMkz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>  
+
+            <hr>
+
+            <div class="flex-container3">
+                <div class="box3">
+                    <button class="button" onclick="allAnswers()">Answers For Cheaters</button>
+                </div>
+            </div>
+            <hr>
+            <div class="flex-container2">
+                <div class="box2">
+                    <p id="spot1"></p>
+                </div>
+                <div class="box2">
+                    <p id="spot2"></p>
+                </div>
+                <div class="box2">
+                    <p id="spot3"></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="flex-container2">
+                <div class="box2">
+                    <img src="images/secretGrey.png" alt="BottonImage" usemap="#rectmap" width="100" height="100">
+                    <map name="rectmap">                
+                        <area shape="rect" coords="0, 0, 100, 100" alt="BottonImage" onclick="secretArt3()">
+                    </map>  
+                </div>
+                <div class="box2">
+                    <!--This code is for the social media links and was gotten from W3 school. When clicked the buttons take the users to the links (href) below and uses the "target:blank_" to make it open a new tab-->
+                    <a href="https://www.youtube.com" target=”_blank” class="fa fa-youtube"></a>
+                    <a href="https://www.google.com" target=”_blank” class="fa fa-google"></a>
+                    <a href="https://www.reddit.com" target=”_blank” class="fa fa-reddit"></a>
+                </div>
+                <div class="box2">
+                    <!--This is where the real time date is desplayed, updated in javascipt-->
+                    <p id="date"></p>
+                </div>
+            </div>
+        </footer>
+        <!--The script tage is where java script code is contained-->
+        <script>
+            //This code creates a function that can be called on from html code above
+            //This code is for finding the first artifact after filling in the input box
+            function secretArt1() {
+                //This is used to take the input and set it to a variable
+                input = document.getElementById("myInput")
+                const inputValue = input.value;
+                //The variable with the numerical value is checked in this If statment to determine if the answer is correct
+                if (inputValue == 3){
+                    //The Alert command is used to send pop-ups to the user
+                    alert("You Found a String of Letters!");
+                    //This code is linked to the element with the name of keySpot (found in the artifact chart) It changes the value of keySpot to Found.
+                    document.getElementById("keySpot").innerHTML = "Found";
+                }
+                else {
+                    alert("Incorrect");
+                }
+            }
+            //This is the  javascript code for the collapsable group. It was copied from W3 School
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+                });
+            }
+            //---------------------------------------------------------------------------------
+            //Function for clicking on the Frodo Meme
+            function secretArt2() {
+                alert("You found a Ring of Power!");
+                document.getElementById("keySpot2").innerHTML = "Found";
+            }
+            //Fills in text after the button All Answers is pressed
+            function allAnswers() {
+                document.getElementById("spot1").innerHTML = "Key1 - 'Ben' is said 3 times";
+                document.getElementById("spot2").innerHTML = "Key2 - Click Frodo's Hand";
+                document.getElementById("spot3").innerHTML = "Key3 - Click the left side of the footer";
+            }
+            //Code for generating a random hint
+            function randHint() {
+                //This code makes a variable and sets its value to a random number without a decimal from 0-2
+                var randNum = Math.floor(Math.random() * 3);
+                if (randNum == 0){
+                    alert("Key 1 - Try answering that input box");
+                }
+                else if (randNum == 1){
+                    alert("Key 2 - The hobbit is hiding something...");
+                }
+                else{
+                    alert("Key 3 - Is something off about the footer?");
+                }
+            }
+            //Code for the hidden png artifact
+            function secretArt3() {
+                alert("You found an Invisability Cloak!");
+                document.getElementById("keySpot3").innerHTML = "Found";
+            }
+            //Bellow is the code for displaying the current date. This code was gotten from W3 School
+            //It set a variable 'd' to the Date method which has built in commands to get certain times
+            const d = new Date();
+            //The month is always one number of so here Ive set its value to a variable and added one before its displayed
+            var month = d.getMonth();
+            month++;
+            //This is the code that actually uses the Date methods and displays them
+            document.getElementById("date").innerHTML = "Today's Date: " + d.getDate() + " " + month + " " + d.getFullYear();
+        </script>
+    </body>
+</html>
